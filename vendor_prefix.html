@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벤더 프리픽스</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+        /* common */
+        *{
+            margin: 0; padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+            list-style: none;
+        }
+
+        header, section{
+            float: left;
+            width: 100%;
+        }
+
+        /* header @@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+        header {
+            height: 140px;
+            /* background-color: lemonchiffon; */
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #header_top{
+            float: left;
+            width: 100%;
+            height: 40px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        #header_top img{
+            float: left;
+        }
+
+        #header_bottom{
+            float: left;
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+            border-bottom: 1px solid dimgrey;
+        }
+        
+        #header_wrap{
+            width: 1300px;
+            height: 100px;
+            margin: 0 auto;
+            /* background-color: teal; */
+        }
+
+        #logo{
+            width: 200px;
+            height: 100px;
+            float: left;
+            position: relative;
+            left: 30px;
+            line-height: 110px;
+        }
+
+        #list_wrap{
+            width: 840px;
+            height: 100px;
+            float: right;
+            /* background-color: lightblue; */
+        }
+
+        #list_wrap li{
+            width: 140px;
+            height: 100%;
+            float: left;
+            font-size: 19px;
+            font-weight: 700;
+            border-left: 1px solid lightgrey;
+            box-sizing: border-box;
+        }
+
+        #list_wrap li:last-child{
+            border-right: 1px solid lightgrey;
+            color: crimson;
+        }
+
+        /* section @@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+        section{
+            width: 100%;
+            height: 800px;
+            /* background-color: peachpuff; */
+        }
+
+        #sec_wrap{
+            width: 1300px;
+            height: 800px;
+            margin: 0 auto;
+            /* background-color: pink; */
+        }
+
+        #sec_left{
+            float: left;
+            width: 200px;
+            height: 100%;
+            margin-top: 30px;
+            /* background-color: lightcoral; */
+        }
+
+        #left_list, #left_list_title{
+            float: left;
+        }
+
+        #left_list_title{
+            width: 100%;
+            height: 50px;
+            font-size: 25px;
+            font-weight: 700;
+            border-bottom: 1px solid dimgray;
+            text-align: center;
+        }
+
+        #left_list{
+            width: 100%;
+            float: left;
+            text-align: left;
+        }
+
+        .list_name{
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 42px;
+        }
+
+        .list_name:first-child{
+            margin-top: 30px;
+        }
+
+        #left_list li{
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid lightgrey;
+        }
+
+        /* section left end @@@@@@@@@@@@@@@@@@@@@@ */
+
+        #scroll_bar{
+            margin-top: 2px;
+            float: left;
+            /* margin-left: px; */
+        }
+
+        #scroll_bar img{
+            width: 20px;
+            height: 810px;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        /* scroll_bar end @@@@@@@@@@@@@@@@@@@ */
+
+        #sec_right{
+            float: right;
+            width: 1000px;
+            height: 100%;
+            margin-top: 30px;
+
+            /* background-color: powderblue; */
+        }
+
+        .title, .con{
+            width: 100%;
+            float: left;
+        }
+
+        .title{
+            height: 40px;
+            font-size: 19px;
+            font-weight: 600;
+            margin: 8px auto;
+            border-bottom: 1px solid gray; 
+        }
+
+        .con p{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 8px auto;
+            font-weight: 500;
+        }
+
+        .con:last-child{
+            border-top: 1px solid gray;
+        }
+
+        table{
+            float: left;
+            border: 1px solid gray;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            font-size: 13px;
+            border-collapse: collapse;
+        }
+
+        tr{ 
+            border: 1px solid gray;
+            height: 30px;
+        }
+
+        td{
+            width: 20%;
+            border: 1px solid gray;}
+
+        table img{
+            width: 30px;
+            height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header_top"></div>
+        <div id="header_bottom">
+            <div id="header_wrap">
+                <div id="logo">
+                    <img src="TCPschool_logo.png" alt="logo_image">
+                </div>
+
+                <div id="list_wrap">
+                    <ul id="head_list">
+                        <li>코딩 이야기</li>
+                        <li>코딩의 첫걸음</li>
+                        <li>코딩과 데이터</li>
+                        <li>데이터와 소통</li>
+                        <li>코딩의 고수</li>
+                        <li>자격증 정보</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <section>
+        <div id="sec_wrap">
+            <div id="sec_left">
+                <div id="left_list_title">41&#41; 밴더 프리픽스</div>
+                <ul id="left_list">
+                    <li class="list_name">&nbsp;&nbsp;&nbsp;1. CSS 시작</li>
+                    <li>&nbsp;&nbsp;&nbsp;1&#41; CSS 개요</li>
+                    <li>&nbsp;&nbsp;&nbsp;2&#41; CSS 기초</li>
+                    <li>&nbsp;&nbsp;&nbsp;3&#41; CSS 문법</li>
+                    <li>&nbsp;&nbsp;&nbsp;4&#41; CSS 적용</li>
+                    <li class="list_name">&nbsp;&nbsp;&nbsp;2. CSS 기본 속성</li>
+                    <li>&nbsp;&nbsp;&nbsp;5&#41; 색</li>
+                    <li>&nbsp;&nbsp;&nbsp;6&#41; 배경</li>
+                    <li>&nbsp;&nbsp;&nbsp;7&#41; 텍스트</li>
+                    <li>&nbsp;&nbsp;&nbsp;8&#41; 글꼴</li>
+                    <li>&nbsp;&nbsp;&nbsp;9&#41; 링크</li>
+                    <li>&nbsp;&nbsp;&nbsp;10&#41; 리스트</li>
+                    <li>&nbsp;&nbsp;&nbsp;11&#41; 테이블</li>
+                    <li>&nbsp;&nbsp;&nbsp;12&#41; 이미지 스프라이트</li>
+                    <li class="list_name">&nbsp;&nbsp;&nbsp;3. CSS 박스 모델</li>
+                    <li>&nbsp;&nbsp;&nbsp;13&#41; 크기 단위</li>
+                    <li>&nbsp;&nbsp;&nbsp;14&#41; 크기</li>
+                
+                </ul>
+            </div>
+        <!-- section_left end -->
+
+            <div id="scroll_bar">
+                <img src="scroll_bar.png" alt="">
+            </div>
+
+        <!-- scroll bar end -->
+            <div id="sec_right">
+
+                <div class="title">
+                    <p>벤더 프리픽스</p></div>
+
+                <div class="con">
+                    <p>벤더 프리픽스 (Vendor Prefix) </p>
+                    <span>세계적으로 가장 많이 사용되는 웹 브라우저에는 익스플로러, 크롬, 파이어폭스, 사파리, 오페라 등이 있습니다. <br>
+                        벤더 프리픽스(vendor prefix)란 이러한 주요 웹 브라우저 공급자가 새로운 실험적인 기능을 제공할 때 이전 버전의 웹 브라우저에 그 사실을 알려주기 위해 사용하는 접두사(prefix)를 의미합니다.<br>
+                        
+                        즉 아직 CSS 권고안에 포함되지 못한 기능이나, CSS 권고안에는 포함되어 있지만 아직 완벽하게 제정된 상태가 아닌 기능을 사용하고자 할 때 벤더 프리픽스를 사용하게 됩니다.<br>
+                        
+                        그렇게 하면 해당 기능이 포함되어 있지 않은 이전 버전의 웹 브라우저에서도 그 기능을 사용할 수 있게 됩니다.</span>
+                    <img src="img_html5_browsers.png" alt="browsers_image">
+                </div>
+
+                <div class="con">
+                    <p>주요 웹 브라우저의 벤더 프리픽스 (vendor prefix) </p>
+                    <span>주요 웹 브라우저가 사용하고 있는 벤더 프리픽스는 다음과 같습니다. </span>
+                    <table>
+                        <tr>
+                            <td><img src="icon-ie.png" alt=""></td>
+                            <td><img src="icon-chrome.png" alt=""></td>
+                            <td><img src="icon-firefox.png" alt=""></td>
+                            <td><img src="icon-safari.png" alt=""></td>
+                            <td><img src="icon-opera.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td>-ms-</td>
+                            <td>-webkit-</td>
+                            <td>-moz-</td>
+                            <td>-wekit-</td>
+                            <td>-o-</td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <span>크롬과 사파리는 같은 웹킷 계열 브라우저이므로 같은 벤더 프리픽스를 사용합니다.</span>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
